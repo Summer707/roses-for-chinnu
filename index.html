@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rose Bloom UI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="scene" aria-hidden="true">
+    <div class="backdrop glow-one"></div>
+    <div class="backdrop glow-two"></div>
+    <div class="backdrop glow-three"></div>
+    <div class="mist mist-one"></div>
+    <div class="mist mist-two"></div>
+
+    <div class="rose-shell rose-a">
+      <svg class="rose-svg" viewBox="0 0 240 420">
+        <g class="rose-drift">
+          <ellipse class="aura aura-outer" cx="120" cy="112" rx="82" ry="66" />
+          <ellipse class="aura aura-inner" cx="120" cy="112" rx="54" ry="42" />
+
+          <g class="stem-group">
+            <path class="stem-line" d="M120 156 C118 226 117 308 122 398" />
+            <path class="leaf leaf-left" d="M118 242 C86 221 58 234 54 266 C82 274 108 262 118 242Z" />
+            <path class="leaf leaf-right" d="M118 280 C145 256 179 259 192 292 C164 305 132 300 118 280Z" />
+            <path class="leaf-vein" d="M118 244 C99 248 82 254 67 265" />
+            <path class="leaf-vein" d="M118 282 C138 286 156 288 178 292" />
+          </g>
+
+          <g class="bloom outer-ring">
+            <path class="petal outer back" d="M120 132 C103 139 88 135 75 124 C75 102 92 92 110 100 C124 107 128 121 120 132Z" transform="rotate(-152 120 132)" />
+            <path class="petal outer back" d="M120 132 C103 139 88 135 75 124 C75 102 92 92 110 100 C124 107 128 121 120 132Z" transform="rotate(152 120 132)" />
+            <path class="petal outer back" d="M120 132 C106 140 94 138 84 129 C84 111 97 102 111 108 C122 113 126 123 120 132Z" transform="rotate(180 120 132)" />
+            <path class="petal outer" d="M120 132 C92 123 72 94 74 58 C92 31 121 42 133 82 C140 106 135 124 120 132Z" />
+            <path class="petal outer" d="M120 132 C96 128 72 112 58 84 C62 55 88 45 112 70 C126 85 129 109 120 132Z" transform="rotate(-40 120 132)" />
+            <path class="petal outer" d="M120 132 C96 128 72 112 58 84 C62 55 88 45 112 70 C126 85 129 109 120 132Z" transform="rotate(40 120 132)" />
+            <path class="petal outer" d="M120 132 C101 136 80 129 64 112 C64 84 86 72 108 89 C123 100 129 117 120 132Z" transform="rotate(-84 120 132)" />
+            <path class="petal outer" d="M120 132 C101 136 80 129 64 112 C64 84 86 72 108 89 C123 100 129 117 120 132Z" transform="rotate(84 120 132)" />
+            <path class="petal outer" d="M120 132 C106 136 91 133 79 121 C79 100 96 89 113 97 C125 103 129 119 120 132Z" transform="rotate(-122 120 132)" />
+            <path class="petal outer" d="M120 132 C106 136 91 133 79 121 C79 100 96 89 113 97 C125 103 129 119 120 132Z" transform="rotate(122 120 132)" />
+          </g>
+
+          <g class="bloom mid-ring">
+            <path class="petal mid back" d="M120 133 C108 137 98 134 90 126 C91 111 101 102 113 107 C123 111 126 122 120 133Z" transform="rotate(180 120 133)" />
+            <path class="petal mid back" d="M120 133 C106 136 95 130 89 119 C93 103 106 98 117 106 C124 111 126 122 120 133Z" transform="rotate(-132 120 133)" />
+            <path class="petal mid back" d="M120 133 C106 136 95 130 89 119 C93 103 106 98 117 106 C124 111 126 122 120 133Z" transform="rotate(132 120 133)" />
+            <path class="petal mid" d="M120 133 C101 120 94 92 101 67 C117 52 133 61 140 83 C145 104 138 122 120 133Z" />
+            <path class="petal mid" d="M120 133 C102 123 88 104 89 82 C101 64 118 68 131 88 C139 102 138 119 120 133Z" transform="rotate(-38 120 133)" />
+            <path class="petal mid" d="M120 133 C102 123 88 104 89 82 C101 64 118 68 131 88 C139 102 138 119 120 133Z" transform="rotate(38 120 133)" />
+            <path class="petal mid" d="M120 133 C107 130 95 119 92 103 C100 86 118 85 129 100 C136 110 134 123 120 133Z" transform="rotate(-78 120 133)" />
+            <path class="petal mid" d="M120 133 C107 130 95 119 92 103 C100 86 118 85 129 100 C136 110 134 123 120 133Z" transform="rotate(78 120 133)" />
+          </g>
+
+          <g class="bloom inner-ring">
+            <path class="petal inner back" d="M120 132 C111 136 103 133 99 126 C101 115 109 110 118 114 C124 117 125 125 120 132Z" transform="rotate(180 120 132)" />
+            <path class="petal inner back" d="M120 132 C109 134 102 129 99 121 C103 111 111 109 118 114 C123 118 124 125 120 132Z" transform="rotate(-110 120 132)" />
+            <path class="petal inner back" d="M120 132 C109 134 102 129 99 121 C103 111 111 109 118 114 C123 118 124 125 120 132Z" transform="rotate(110 120 132)" />
+            <path class="petal inner" d="M120 132 C108 122 107 102 115 89 C125 83 135 89 138 102 C140 114 133 126 120 132Z" />
+            <path class="petal inner" d="M120 132 C109 125 103 113 105 100 C114 91 125 94 132 105 C136 113 133 124 120 132Z" transform="rotate(-36 120 132)" />
+            <path class="petal inner" d="M120 132 C109 125 103 113 105 100 C114 91 125 94 132 105 C136 113 133 124 120 132Z" transform="rotate(36 120 132)" />
+            <path class="petal inner" d="M120 132 C111 127 107 118 109 109 C116 102 124 104 129 111 C132 117 130 126 120 132Z" transform="rotate(-72 120 132)" />
+            <path class="petal inner" d="M120 132 C111 127 107 118 109 109 C116 102 124 104 129 111 C132 117 130 126 120 132Z" transform="rotate(72 120 132)" />
+          </g>
+
+          <g class="core-group">
+            <path class="core-fold" d="M116 129 C104 119 105 102 118 95 C131 95 139 107 136 118 C133 129 124 134 116 129Z" />
+            <path class="core-swirl" d="M124 101 C132 102 136 112 131 119 C126 126 114 126 109 118 C104 110 110 99 120 99 C127 99 132 104 132 111 C132 118 126 123 119 123" />
+            <circle class="core-light" cx="121" cy="108" r="5" />
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="rose-shell rose-b">
+      <svg class="rose-svg" viewBox="0 0 240 420">
+        <g class="rose-drift">
+          <ellipse class="aura aura-outer" cx="120" cy="112" rx="82" ry="66" />
+          <ellipse class="aura aura-inner" cx="120" cy="112" rx="54" ry="42" />
+
+          <g class="stem-group">
+            <path class="stem-line" d="M120 156 C118 226 117 308 122 398" />
+            <path class="leaf leaf-left" d="M118 242 C86 221 58 234 54 266 C82 274 108 262 118 242Z" />
+            <path class="leaf leaf-right" d="M118 280 C145 256 179 259 192 292 C164 305 132 300 118 280Z" />
+            <path class="leaf-vein" d="M118 244 C99 248 82 254 67 265" />
+            <path class="leaf-vein" d="M118 282 C138 286 156 288 178 292" />
+          </g>
+
+          <g class="bloom outer-ring">
+            <path class="petal outer back" d="M120 132 C103 139 88 135 75 124 C75 102 92 92 110 100 C124 107 128 121 120 132Z" transform="rotate(-152 120 132)" />
+            <path class="petal outer back" d="M120 132 C103 139 88 135 75 124 C75 102 92 92 110 100 C124 107 128 121 120 132Z" transform="rotate(152 120 132)" />
+            <path class="petal outer back" d="M120 132 C106 140 94 138 84 129 C84 111 97 102 111 108 C122 113 126 123 120 132Z" transform="rotate(180 120 132)" />
+            <path class="petal outer" d="M120 132 C92 123 72 94 74 58 C92 31 121 42 133 82 C140 106 135 124 120 132Z" />
+            <path class="petal outer" d="M120 132 C96 128 72 112 58 84 C62 55 88 45 112 70 C126 85 129 109 120 132Z" transform="rotate(-40 120 132)" />
+            <path class="petal outer" d="M120 132 C96 128 72 112 58 84 C62 55 88 45 112 70 C126 85 129 109 120 132Z" transform="rotate(40 120 132)" />
+            <path class="petal outer" d="M120 132 C101 136 80 129 64 112 C64 84 86 72 108 89 C123 100 129 117 120 132Z" transform="rotate(-84 120 132)" />
+            <path class="petal outer" d="M120 132 C101 136 80 129 64 112 C64 84 86 72 108 89 C123 100 129 117 120 132Z" transform="rotate(84 120 132)" />
+            <path class="petal outer" d="M120 132 C106 136 91 133 79 121 C79 100 96 89 113 97 C125 103 129 119 120 132Z" transform="rotate(-122 120 132)" />
+            <path class="petal outer" d="M120 132 C106 136 91 133 79 121 C79 100 96 89 113 97 C125 103 129 119 120 132Z" transform="rotate(122 120 132)" />
+          </g>
+
+          <g class="bloom mid-ring">
+            <path class="petal mid back" d="M120 133 C108 137 98 134 90 126 C91 111 101 102 113 107 C123 111 126 122 120 133Z" transform="rotate(180 120 133)" />
+            <path class="petal mid back" d="M120 133 C106 136 95 130 89 119 C93 103 106 98 117 106 C124 111 126 122 120 133Z" transform="rotate(-132 120 133)" />
+            <path class="petal mid back" d="M120 133 C106 136 95 130 89 119 C93 103 106 98 117 106 C124 111 126 122 120 133Z" transform="rotate(132 120 133)" />
+            <path class="petal mid" d="M120 133 C101 120 94 92 101 67 C117 52 133 61 140 83 C145 104 138 122 120 133Z" />
+            <path class="petal mid" d="M120 133 C102 123 88 104 89 82 C101 64 118 68 131 88 C139 102 138 119 120 133Z" transform="rotate(-38 120 133)" />
+            <path class="petal mid" d="M120 133 C102 123 88 104 89 82 C101 64 118 68 131 88 C139 102 138 119 120 133Z" transform="rotate(38 120 133)" />
+            <path class="petal mid" d="M120 133 C107 130 95 119 92 103 C100 86 118 85 129 100 C136 110 134 123 120 133Z" transform="rotate(-78 120 133)" />
+            <path class="petal mid" d="M120 133 C107 130 95 119 92 103 C100 86 118 85 129 100 C136 110 134 123 120 133Z" transform="rotate(78 120 133)" />
+          </g>
+
+          <g class="bloom inner-ring">
+            <path class="petal inner back" d="M120 132 C111 136 103 133 99 126 C101 115 109 110 118 114 C124 117 125 125 120 132Z" transform="rotate(180 120 132)" />
+            <path class="petal inner back" d="M120 132 C109 134 102 129 99 121 C103 111 111 109 118 114 C123 118 124 125 120 132Z" transform="rotate(-110 120 132)" />
+            <path class="petal inner back" d="M120 132 C109 134 102 129 99 121 C103 111 111 109 118 114 C123 118 124 125 120 132Z" transform="rotate(110 120 132)" />
+            <path class="petal inner" d="M120 132 C108 122 107 102 115 89 C125 83 135 89 138 102 C140 114 133 126 120 132Z" />
+            <path class="petal inner" d="M120 132 C109 125 103 113 105 100 C114 91 125 94 132 105 C136 113 133 124 120 132Z" transform="rotate(-36 120 132)" />
+            <path class="petal inner" d="M120 132 C109 125 103 113 105 100 C114 91 125 94 132 105 C136 113 133 124 120 132Z" transform="rotate(36 120 132)" />
+            <path class="petal inner" d="M120 132 C111 127 107 118 109 109 C116 102 124 104 129 111 C132 117 130 126 120 132Z" transform="rotate(-72 120 132)" />
+            <path class="petal inner" d="M120 132 C111 127 107 118 109 109 C116 102 124 104 129 111 C132 117 130 126 120 132Z" transform="rotate(72 120 132)" />
+          </g>
+
+          <g class="core-group">
+            <path class="core-fold" d="M116 129 C104 119 105 102 118 95 C131 95 139 107 136 118 C133 129 124 134 116 129Z" />
+            <path class="core-swirl" d="M124 101 C132 102 136 112 131 119 C126 126 114 126 109 118 C104 110 110 99 120 99 C127 99 132 104 132 111 C132 118 126 123 119 123" />
+            <circle class="core-light" cx="121" cy="108" r="5" />
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="rose-shell rose-c">
+      <svg class="rose-svg" viewBox="0 0 240 420">
+        <g class="rose-drift">
+          <ellipse class="aura aura-outer" cx="120" cy="112" rx="82" ry="66" />
+          <ellipse class="aura aura-inner" cx="120" cy="112" rx="54" ry="42" />
+
+          <g class="stem-group">
+            <path class="stem-line" d="M120 156 C118 226 117 308 122 398" />
+            <path class="leaf leaf-left" d="M118 242 C86 221 58 234 54 266 C82 274 108 262 118 242Z" />
+            <path class="leaf leaf-right" d="M118 280 C145 256 179 259 192 292 C164 305 132 300 118 280Z" />
+            <path class="leaf-vein" d="M118 244 C99 248 82 254 67 265" />
+            <path class="leaf-vein" d="M118 282 C138 286 156 288 178 292" />
+          </g>
+
+          <g class="bloom outer-ring">
+            <path class="petal outer back" d="M120 132 C103 139 88 135 75 124 C75 102 92 92 110 100 C124 107 128 121 120 132Z" transform="rotate(-152 120 132)" />
+            <path class="petal outer back" d="M120 132 C103 139 88 135 75 124 C75 102 92 92 110 100 C124 107 128 121 120 132Z" transform="rotate(152 120 132)" />
+            <path class="petal outer back" d="M120 132 C106 140 94 138 84 129 C84 111 97 102 111 108 C122 113 126 123 120 132Z" transform="rotate(180 120 132)" />
+            <path class="petal outer" d="M120 132 C92 123 72 94 74 58 C92 31 121 42 133 82 C140 106 135 124 120 132Z" />
+            <path class="petal outer" d="M120 132 C96 128 72 112 58 84 C62 55 88 45 112 70 C126 85 129 109 120 132Z" transform="rotate(-40 120 132)" />
+            <path class="petal outer" d="M120 132 C96 128 72 112 58 84 C62 55 88 45 112 70 C126 85 129 109 120 132Z" transform="rotate(40 120 132)" />
+            <path class="petal outer" d="M120 132 C101 136 80 129 64 112 C64 84 86 72 108 89 C123 100 129 117 120 132Z" transform="rotate(-84 120 132)" />
+            <path class="petal outer" d="M120 132 C101 136 80 129 64 112 C64 84 86 72 108 89 C123 100 129 117 120 132Z" transform="rotate(84 120 132)" />
+            <path class="petal outer" d="M120 132 C106 136 91 133 79 121 C79 100 96 89 113 97 C125 103 129 119 120 132Z" transform="rotate(-122 120 132)" />
+            <path class="petal outer" d="M120 132 C106 136 91 133 79 121 C79 100 96 89 113 97 C125 103 129 119 120 132Z" transform="rotate(122 120 132)" />
+          </g>
+
+          <g class="bloom mid-ring">
+            <path class="petal mid back" d="M120 133 C108 137 98 134 90 126 C91 111 101 102 113 107 C123 111 126 122 120 133Z" transform="rotate(180 120 133)" />
+            <path class="petal mid back" d="M120 133 C106 136 95 130 89 119 C93 103 106 98 117 106 C124 111 126 122 120 133Z" transform="rotate(-132 120 133)" />
+            <path class="petal mid back" d="M120 133 C106 136 95 130 89 119 C93 103 106 98 117 106 C124 111 126 122 120 133Z" transform="rotate(132 120 133)" />
+            <path class="petal mid" d="M120 133 C101 120 94 92 101 67 C117 52 133 61 140 83 C145 104 138 122 120 133Z" />
+            <path class="petal mid" d="M120 133 C102 123 88 104 89 82 C101 64 118 68 131 88 C139 102 138 119 120 133Z" transform="rotate(-38 120 133)" />
+            <path class="petal mid" d="M120 133 C102 123 88 104 89 82 C101 64 118 68 131 88 C139 102 138 119 120 133Z" transform="rotate(38 120 133)" />
+            <path class="petal mid" d="M120 133 C107 130 95 119 92 103 C100 86 118 85 129 100 C136 110 134 123 120 133Z" transform="rotate(-78 120 133)" />
+            <path class="petal mid" d="M120 133 C107 130 95 119 92 103 C100 86 118 85 129 100 C136 110 134 123 120 133Z" transform="rotate(78 120 133)" />
+          </g>
+
+          <g class="bloom inner-ring">
+            <path class="petal inner back" d="M120 132 C111 136 103 133 99 126 C101 115 109 110 118 114 C124 117 125 125 120 132Z" transform="rotate(180 120 132)" />
+            <path class="petal inner back" d="M120 132 C109 134 102 129 99 121 C103 111 111 109 118 114 C123 118 124 125 120 132Z" transform="rotate(-110 120 132)" />
+            <path class="petal inner back" d="M120 132 C109 134 102 129 99 121 C103 111 111 109 118 114 C123 118 124 125 120 132Z" transform="rotate(110 120 132)" />
+            <path class="petal inner" d="M120 132 C108 122 107 102 115 89 C125 83 135 89 138 102 C140 114 133 126 120 132Z" />
+            <path class="petal inner" d="M120 132 C109 125 103 113 105 100 C114 91 125 94 132 105 C136 113 133 124 120 132Z" transform="rotate(-36 120 132)" />
+            <path class="petal inner" d="M120 132 C109 125 103 113 105 100 C114 91 125 94 132 105 C136 113 133 124 120 132Z" transform="rotate(36 120 132)" />
+            <path class="petal inner" d="M120 132 C111 127 107 118 109 109 C116 102 124 104 129 111 C132 117 130 126 120 132Z" transform="rotate(-72 120 132)" />
+            <path class="petal inner" d="M120 132 C111 127 107 118 109 109 C116 102 124 104 129 111 C132 117 130 126 120 132Z" transform="rotate(72 120 132)" />
+          </g>
+
+          <g class="core-group">
+            <path class="core-fold" d="M116 129 C104 119 105 102 118 95 C131 95 139 107 136 118 C133 129 124 134 116 129Z" />
+            <path class="core-swirl" d="M124 101 C132 102 136 112 131 119 C126 126 114 126 109 118 C104 110 110 99 120 99 C127 99 132 104 132 111 C132 118 126 123 119 123" />
+            <circle class="core-light" cx="121" cy="108" r="5" />
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="rose-shell rose-d">
+      <svg class="rose-svg" viewBox="0 0 240 420">
+        <g class="rose-drift">
+          <ellipse class="aura aura-outer" cx="120" cy="112" rx="82" ry="66" />
+          <ellipse class="aura aura-inner" cx="120" cy="112" rx="54" ry="42" />
+
+          <g class="stem-group">
+            <path class="stem-line" d="M120 156 C118 226 117 308 122 398" />
+            <path class="leaf leaf-left" d="M118 242 C86 221 58 234 54 266 C82 274 108 262 118 242Z" />
+            <path class="leaf leaf-right" d="M118 280 C145 256 179 259 192 292 C164 305 132 300 118 280Z" />
+            <path class="leaf-vein" d="M118 244 C99 248 82 254 67 265" />
+            <path class="leaf-vein" d="M118 282 C138 286 156 288 178 292" />
+          </g>
+
+          <g class="bloom outer-ring">
+            <path class="petal outer back" d="M120 132 C103 139 88 135 75 124 C75 102 92 92 110 100 C124 107 128 121 120 132Z" transform="rotate(-152 120 132)" />
+            <path class="petal outer back" d="M120 132 C103 139 88 135 75 124 C75 102 92 92 110 100 C124 107 128 121 120 132Z" transform="rotate(152 120 132)" />
+            <path class="petal outer back" d="M120 132 C106 140 94 138 84 129 C84 111 97 102 111 108 C122 113 126 123 120 132Z" transform="rotate(180 120 132)" />
+            <path class="petal outer" d="M120 132 C92 123 72 94 74 58 C92 31 121 42 133 82 C140 106 135 124 120 132Z" />
+            <path class="petal outer" d="M120 132 C96 128 72 112 58 84 C62 55 88 45 112 70 C126 85 129 109 120 132Z" transform="rotate(-40 120 132)" />
+            <path class="petal outer" d="M120 132 C96 128 72 112 58 84 C62 55 88 45 112 70 C126 85 129 109 120 132Z" transform="rotate(40 120 132)" />
+            <path class="petal outer" d="M120 132 C101 136 80 129 64 112 C64 84 86 72 108 89 C123 100 129 117 120 132Z" transform="rotate(-84 120 132)" />
+            <path class="petal outer" d="M120 132 C101 136 80 129 64 112 C64 84 86 72 108 89 C123 100 129 117 120 132Z" transform="rotate(84 120 132)" />
+            <path class="petal outer" d="M120 132 C106 136 91 133 79 121 C79 100 96 89 113 97 C125 103 129 119 120 132Z" transform="rotate(-122 120 132)" />
+            <path class="petal outer" d="M120 132 C106 136 91 133 79 121 C79 100 96 89 113 97 C125 103 129 119 120 132Z" transform="rotate(122 120 132)" />
+          </g>
+
+          <g class="bloom mid-ring">
+            <path class="petal mid back" d="M120 133 C108 137 98 134 90 126 C91 111 101 102 113 107 C123 111 126 122 120 133Z" transform="rotate(180 120 133)" />
+            <path class="petal mid back" d="M120 133 C106 136 95 130 89 119 C93 103 106 98 117 106 C124 111 126 122 120 133Z" transform="rotate(-132 120 133)" />
+            <path class="petal mid back" d="M120 133 C106 136 95 130 89 119 C93 103 106 98 117 106 C124 111 126 122 120 133Z" transform="rotate(132 120 133)" />
+            <path class="petal mid" d="M120 133 C101 120 94 92 101 67 C117 52 133 61 140 83 C145 104 138 122 120 133Z" />
+            <path class="petal mid" d="M120 133 C102 123 88 104 89 82 C101 64 118 68 131 88 C139 102 138 119 120 133Z" transform="rotate(-38 120 133)" />
+            <path class="petal mid" d="M120 133 C102 123 88 104 89 82 C101 64 118 68 131 88 C139 102 138 119 120 133Z" transform="rotate(38 120 133)" />
+            <path class="petal mid" d="M120 133 C107 130 95 119 92 103 C100 86 118 85 129 100 C136 110 134 123 120 133Z" transform="rotate(-78 120 133)" />
+            <path class="petal mid" d="M120 133 C107 130 95 119 92 103 C100 86 118 85 129 100 C136 110 134 123 120 133Z" transform="rotate(78 120 133)" />
+          </g>
+
+          <g class="bloom inner-ring">
+            <path class="petal inner back" d="M120 132 C111 136 103 133 99 126 C101 115 109 110 118 114 C124 117 125 125 120 132Z" transform="rotate(180 120 132)" />
+            <path class="petal inner back" d="M120 132 C109 134 102 129 99 121 C103 111 111 109 118 114 C123 118 124 125 120 132Z" transform="rotate(-110 120 132)" />
+            <path class="petal inner back" d="M120 132 C109 134 102 129 99 121 C103 111 111 109 118 114 C123 118 124 125 120 132Z" transform="rotate(110 120 132)" />
+            <path class="petal inner" d="M120 132 C108 122 107 102 115 89 C125 83 135 89 138 102 C140 114 133 126 120 132Z" />
+            <path class="petal inner" d="M120 132 C109 125 103 113 105 100 C114 91 125 94 132 105 C136 113 133 124 120 132Z" transform="rotate(-36 120 132)" />
+            <path class="petal inner" d="M120 132 C109 125 103 113 105 100 C114 91 125 94 132 105 C136 113 133 124 120 132Z" transform="rotate(36 120 132)" />
+            <path class="petal inner" d="M120 132 C111 127 107 118 109 109 C116 102 124 104 129 111 C132 117 130 126 120 132Z" transform="rotate(-72 120 132)" />
+            <path class="petal inner" d="M120 132 C111 127 107 118 109 109 C116 102 124 104 129 111 C132 117 130 126 120 132Z" transform="rotate(72 120 132)" />
+          </g>
+
+          <g class="core-group">
+            <path class="core-fold" d="M116 129 C104 119 105 102 118 95 C131 95 139 107 136 118 C133 129 124 134 116 129Z" />
+            <path class="core-swirl" d="M124 101 C132 102 136 112 131 119 C126 126 114 126 109 118 C104 110 110 99 120 99 C127 99 132 104 132 111 C132 118 126 123 119 123" />
+            <circle class="core-light" cx="121" cy="108" r="5" />
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="rose-shell rose-e">
+      <svg class="rose-svg" viewBox="0 0 240 420">
+        <g class="rose-drift">
+          <ellipse class="aura aura-outer" cx="120" cy="112" rx="82" ry="66" />
+          <ellipse class="aura aura-inner" cx="120" cy="112" rx="54" ry="42" />
+
+          <g class="stem-group">
+            <path class="stem-line" d="M120 156 C118 226 117 308 122 398" />
+            <path class="leaf leaf-left" d="M118 242 C86 221 58 234 54 266 C82 274 108 262 118 242Z" />
+            <path class="leaf leaf-right" d="M118 280 C145 256 179 259 192 292 C164 305 132 300 118 280Z" />
+            <path class="leaf-vein" d="M118 244 C99 248 82 254 67 265" />
+            <path class="leaf-vein" d="M118 282 C138 286 156 288 178 292" />
+          </g>
+
+          <g class="bloom outer-ring">
+            <path class="petal outer back" d="M120 132 C103 139 88 135 75 124 C75 102 92 92 110 100 C124 107 128 121 120 132Z" transform="rotate(-152 120 132)" />
+            <path class="petal outer back" d="M120 132 C103 139 88 135 75 124 C75 102 92 92 110 100 C124 107 128 121 120 132Z" transform="rotate(152 120 132)" />
+            <path class="petal outer back" d="M120 132 C106 140 94 138 84 129 C84 111 97 102 111 108 C122 113 126 123 120 132Z" transform="rotate(180 120 132)" />
+            <path class="petal outer" d="M120 132 C92 123 72 94 74 58 C92 31 121 42 133 82 C140 106 135 124 120 132Z" />
+            <path class="petal outer" d="M120 132 C96 128 72 112 58 84 C62 55 88 45 112 70 C126 85 129 109 120 132Z" transform="rotate(-40 120 132)" />
+            <path class="petal outer" d="M120 132 C96 128 72 112 58 84 C62 55 88 45 112 70 C126 85 129 109 120 132Z" transform="rotate(40 120 132)" />
+            <path class="petal outer" d="M120 132 C101 136 80 129 64 112 C64 84 86 72 108 89 C123 100 129 117 120 132Z" transform="rotate(-84 120 132)" />
+            <path class="petal outer" d="M120 132 C101 136 80 129 64 112 C64 84 86 72 108 89 C123 100 129 117 120 132Z" transform="rotate(84 120 132)" />
+            <path class="petal outer" d="M120 132 C106 136 91 133 79 121 C79 100 96 89 113 97 C125 103 129 119 120 132Z" transform="rotate(-122 120 132)" />
+            <path class="petal outer" d="M120 132 C106 136 91 133 79 121 C79 100 96 89 113 97 C125 103 129 119 120 132Z" transform="rotate(122 120 132)" />
+          </g>
+
+          <g class="bloom mid-ring">
+            <path class="petal mid back" d="M120 133 C108 137 98 134 90 126 C91 111 101 102 113 107 C123 111 126 122 120 133Z" transform="rotate(180 120 133)" />
+            <path class="petal mid back" d="M120 133 C106 136 95 130 89 119 C93 103 106 98 117 106 C124 111 126 122 120 133Z" transform="rotate(-132 120 133)" />
+            <path class="petal mid back" d="M120 133 C106 136 95 130 89 119 C93 103 106 98 117 106 C124 111 126 122 120 133Z" transform="rotate(132 120 133)" />
+            <path class="petal mid" d="M120 133 C101 120 94 92 101 67 C117 52 133 61 140 83 C145 104 138 122 120 133Z" />
+            <path class="petal mid" d="M120 133 C102 123 88 104 89 82 C101 64 118 68 131 88 C139 102 138 119 120 133Z" transform="rotate(-38 120 133)" />
+            <path class="petal mid" d="M120 133 C102 123 88 104 89 82 C101 64 118 68 131 88 C139 102 138 119 120 133Z" transform="rotate(38 120 133)" />
+            <path class="petal mid" d="M120 133 C107 130 95 119 92 103 C100 86 118 85 129 100 C136 110 134 123 120 133Z" transform="rotate(-78 120 133)" />
+            <path class="petal mid" d="M120 133 C107 130 95 119 92 103 C100 86 118 85 129 100 C136 110 134 123 120 133Z" transform="rotate(78 120 133)" />
+          </g>
+
+          <g class="bloom inner-ring">
+            <path class="petal inner back" d="M120 132 C111 136 103 133 99 126 C101 115 109 110 118 114 C124 117 125 125 120 132Z" transform="rotate(180 120 132)" />
+            <path class="petal inner back" d="M120 132 C109 134 102 129 99 121 C103 111 111 109 118 114 C123 118 124 125 120 132Z" transform="rotate(-110 120 132)" />
+            <path class="petal inner back" d="M120 132 C109 134 102 129 99 121 C103 111 111 109 118 114 C123 118 124 125 120 132Z" transform="rotate(110 120 132)" />
+            <path class="petal inner" d="M120 132 C108 122 107 102 115 89 C125 83 135 89 138 102 C140 114 133 126 120 132Z" />
+            <path class="petal inner" d="M120 132 C109 125 103 113 105 100 C114 91 125 94 132 105 C136 113 133 124 120 132Z" transform="rotate(-36 120 132)" />
+            <path class="petal inner" d="M120 132 C109 125 103 113 105 100 C114 91 125 94 132 105 C136 113 133 124 120 132Z" transform="rotate(36 120 132)" />
+            <path class="petal inner" d="M120 132 C111 127 107 118 109 109 C116 102 124 104 129 111 C132 117 130 126 120 132Z" transform="rotate(-72 120 132)" />
+            <path class="petal inner" d="M120 132 C111 127 107 118 109 109 C116 102 124 104 129 111 C132 117 130 126 120 132Z" transform="rotate(72 120 132)" />
+          </g>
+
+          <g class="core-group">
+            <path class="core-fold" d="M116 129 C104 119 105 102 118 95 C131 95 139 107 136 118 C133 129 124 134 116 129Z" />
+            <path class="core-swirl" d="M124 101 C132 102 136 112 131 119 C126 126 114 126 109 118 C104 110 110 99 120 99 C127 99 132 104 132 111 C132 118 126 123 119 123" />
+            <circle class="core-light" cx="121" cy="108" r="5" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </main>
+</body>
+</html>
